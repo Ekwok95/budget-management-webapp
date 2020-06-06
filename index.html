@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Budgeting Tool</title>
+
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+
+    <body onload="displayBalance()">
+        <div class="container">
+            <h1>Budgeting Tool <small>by Bryan</small></h1>
+            
+            <div class="jumbotron">
+                <h2>Current Balance: <span id="balance"></span></h2>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Transaction Type</th>
+                        <th scope="col">Transaction Description</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+            </table>
+
+            <button type="submit" class="btn btn-primary" onclick="window.location.href='./create_trans_entry.html'">Create Transaction Entry</button>
+        </div>
+
+        <script src="budget_calculation.js"></script>
+    </body>
+
+
+</html>
